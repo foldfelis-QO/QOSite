@@ -1,0 +1,13 @@
+name = "QOSite"
+uuid = "b83646c4-d3b9-4cfa-bed2-64cb7d6b0f06"
+authors = ["JingYu Ning <115336923+jrunkening@users.noreply.github.com> and contributors"]
+version = "0.1.0"
+
+[compat]
+julia = "1.8"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
