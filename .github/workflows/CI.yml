@@ -19,7 +19,6 @@ jobs:
       matrix:
         version:
           - '1.8'
-          - 'nightly'
         os:
           - ubuntu-latest
         arch:
@@ -39,7 +38,7 @@ jobs:
           files: lcov.info
   docs:
     name: Documentation
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     permissions:
       contents: write
     steps:
@@ -57,3 +56,6 @@ jobs:
             using QOSite
             DocMeta.setdocmeta!(QOSite, :DocTestSetup, :(using QOSite); recursive=true)
             doctest(QOSite)'
+      - run: |
+          rm -rf /ci/site/*
+          cp -r docs/build/* /ci/site/
