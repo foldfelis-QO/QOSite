@@ -2,9 +2,7 @@
 CurrentModule = QOSite
 ```
 
-# QOSite
-
-Documentation for [QOSite](https://github.com/foldfelis-QO/QOSite.jl).
+# Quantum Optics Group
 
 ```@index
 ```
